@@ -6,7 +6,15 @@ box-sizing: border-box;
 margin: 0;
 padding: 0;
 }
+html{
+    font-size: 62.5%;
+}
 body{
-    background-color: $LightRed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: $white;
     font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: $light;
 }
