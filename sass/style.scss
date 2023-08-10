@@ -26,6 +26,7 @@ body {
     display: grid;
     grid-template-rows: 40% 60%;
     min-height: 100vh;
+    font-size: 2rem;
   .component-stats-info{
     background-color: $lightSlateBlue;
     grid-row: 1/2;
