@@ -1,20 +1,37 @@
 @import "./colors";
 @import "./font";
 
-*,*::before, *::after{
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body {
+  min-height: 100vh;
+  background-color: $white;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: $light;
+}
+.wrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.component {
+    display: grid;
+    grid-template-rows: 40% 60%;
     min-height: 100vh;
-    background-color: $white;
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-weight: $light;
+  .component-stats-info{
+    background-color: $lightSlateBlue;
+    grid-row: 1/2;
+  }
+  .component-stats-performance{
+    background-color: red;
+    grid-row: 2/4;
+  }
 }
