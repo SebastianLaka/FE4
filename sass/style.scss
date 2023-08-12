@@ -30,6 +30,8 @@ body {
   .component-stats-info{
     background-color: $lightSlateBlue;
     grid-row: 1/2;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
   }
   .component-stats-performance{
     background-color: red;
