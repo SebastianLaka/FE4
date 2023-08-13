@@ -28,13 +28,13 @@ body {
   .component {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 40% 60%;
-        grid-template-rows: 40% 60%;
+    -ms-grid-rows: 42.5% 60%;
+        grid-template-rows: 42.5% 60%;
     min-height: 100vh;
   }
   .component .component-stats-info {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#7857ff), color-stop(90%, #2e2be9), to(#4e21ca));
-    background-image: linear-gradient(#7857ff, #2e2be9 90%, #4e21ca);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#977efc), color-stop(90%, #2e2be9), to(#4e21ca));
+    background-image: linear-gradient(#977efc, #2e2be9 90%, #4e21ca);
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
@@ -43,8 +43,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -52,7 +53,41 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 1em 4em;
+    padding: 0 3em;
+  }
+  .component .component-stats-info__header {
+    color: #c8c7ff;
+    font-size: 1.8rem;
+  }
+  .component .component-stats-info .performance-stat {
+    border-radius: 50%;
+    padding: 2.5em 3.75em;
+    text-align: center;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(36, 33, 202, 0)), to(#4e21ca));
+    background-image: linear-gradient(to top, rgba(36, 33, 202, 0), #4e21ca);
+  }
+  .component .component-stats-info .performance-stat__max-score {
+    font-size: 1.6rem;
+    color: #c8c7ff;
+  }
+  .component .component-stats-info .performance-stat__max-score--current {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #c8c7ff;
+  }
+  .component .component-stats-info .result {
+    margin: 1em 0;
+  }
+  .component .component-stats-info .result__info {
+    text-align: center;
+    color: #ebf1ff;
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+  .component .component-stats-info .result__about {
+    margin-top: 0.5em;
+    color: #c8c7ff;
+    font-size: 1.4rem;
   }
   .component .component-stats-performance {
     -ms-grid-row: 2;
