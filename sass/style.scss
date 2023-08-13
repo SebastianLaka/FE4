@@ -22,7 +22,7 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-@media (min-width: 375px) {
+@media (min-width: 280px) {
   .component {
     display: grid;
     grid-template-rows: 40% 60%;
@@ -35,12 +35,11 @@ body {
       border-bottom-right-radius: 2em;
     }
     .component-stats-performance {
-      background-color: red;
       grid-row: 2/4;
     }
   }
 }
-@media (min-width: 992px){
+@media (min-width: 768px){
   .component{
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(2, 2fr);
