@@ -32,7 +32,11 @@ body {
       grid-row: 1/2;
       border-bottom-left-radius: 2em;
       border-bottom-right-radius: 2em;
-      
+      display: flex;
+      justify-content: space-around; 
+      align-items: center;
+      flex-direction: column;
+      padding: 1em 4em;
     }
     .component-stats-performance {
       grid-row: 2/4;
