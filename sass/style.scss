@@ -27,12 +27,12 @@ body {
     display: grid;
     grid-template-rows: 40% 60%;
     min-height: 100vh;
-    font-size: 2rem;
     .component-stats-info {
-      background-color: $lightSlateBlue;
+      background-image: linear-gradient($lightSlateBlue, $lightRoyalBlue 90%, $violetBlue);
       grid-row: 1/2;
       border-bottom-left-radius: 2em;
       border-bottom-right-radius: 2em;
+      
     }
     .component-stats-performance {
       grid-row: 2/4;
