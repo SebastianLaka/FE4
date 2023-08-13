@@ -17,24 +17,41 @@ body {
   font-family: "Hanken Grotesk", sans-serif;
   font-weight: $light;
 }
-.wrapper{
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
-.component {
+@media (min-width: 375px) {
+  .component {
     display: grid;
     grid-template-rows: 40% 60%;
     min-height: 100vh;
     font-size: 2rem;
-  .component-stats-info{
-    background-color: $lightSlateBlue;
-    grid-row: 1/2;
-    border-bottom-left-radius: 2em;
-    border-bottom-right-radius: 2em;
+    .component-stats-info {
+      background-color: $lightSlateBlue;
+      grid-row: 1/2;
+      border-bottom-left-radius: 2em;
+      border-bottom-right-radius: 2em;
+    }
+    .component-stats-performance {
+      background-color: red;
+      grid-row: 2/4;
+    }
   }
-  .component-stats-performance{
-    background-color: red;
-    grid-row: 2/4;
+}
+@media (min-width: 992px){
+  .component{
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    .component-stats-info, .component-stats-performance{
+      grid-column: 1/2;
+      grid-row: 1/3;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .component-stats-performance{
+      grid-column: 2/3;
+    }
   }
 }
