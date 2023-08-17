@@ -119,6 +119,10 @@ body {
           right: 0;
           top: -50;
           margin-right: 2em;
+          color: $darkGrayBlue;
+        }
+        &--gray-color{
+          color: $lightLavender;
         }
       }
       &__cta {
@@ -131,6 +135,11 @@ body {
         letter-spacing: 0.1em;
         font-weight: $bold;
         width: 100%;
+        transition: background-image .3s;
+        cursor: pointer;
+      }
+      &__cta:hover{
+        background-image: linear-gradient(to top, $lightRoyalBlue, $lightSlateBlue);
       }
     }
   }
@@ -145,6 +154,7 @@ body {
       grid-column: 1/2;
       grid-row: 2/3;
       border-radius: 2em;
+     
       .performance-stat{
         padding: 5em 6.5em;
       }
@@ -160,6 +170,9 @@ body {
       display: flex;
       justify-content: space-around;
       align-items: start;
+      &__header{
+        margin-top: 1.5em;
+      }
       .performance-stats {
       width: 100%;
       justify-content: start;       

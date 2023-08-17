@@ -144,6 +144,10 @@ body {
     right: 0;
     top: -50;
     margin-right: 2em;
+    color: #303b5a;
+  }
+  .component .component-stats-performance .performance-stats--gray-color {
+    color: #c8c7ff;
   }
   .component .component-stats-performance__cta {
     padding: 1.75em 0;
@@ -155,6 +159,13 @@ body {
     letter-spacing: 0.1em;
     font-weight: 700;
     width: 100%;
+    -webkit-transition: background-image .3s;
+    transition: background-image .3s;
+    cursor: pointer;
+  }
+  .component .component-stats-performance__cta:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#2e2be9), to(#977efc));
+    background-image: linear-gradient(to top, #2e2be9, #977efc);
   }
 }
 
@@ -197,6 +208,9 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+  }
+  .component .component-stats-performance__header {
+    margin-top: 1.5em;
   }
   .component .component-stats-performance .performance-stats {
     width: 100%;
