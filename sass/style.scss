@@ -140,9 +140,8 @@ body {
       }
     }
   }
-  .attribution{
-    margin-bottom: 5em;
-  }
+  
+  
 }
 @media (min-width: 768px) {
   .component {
@@ -154,7 +153,7 @@ body {
       grid-column: 1/2;
       grid-row: 2/3;
       border-radius: 2em;
-     
+    
       .performance-stat{
         padding: 5em 6.5em;
       }
@@ -171,7 +170,7 @@ body {
       justify-content: space-around;
       align-items: start;
       &__header{
-        margin-top: 1.5em;
+        margin-top: 1.75em;
       }
       .performance-stats {
       width: 100%;
@@ -179,10 +178,7 @@ body {
     }
     &__cta{
       padding: 1.5em 2em;
-      margin-bottom: 2em;
-    }
-    .attribution{
-      margin-bottom: 0;
+      margin-bottom: 3.25em;
     }
   }
 }

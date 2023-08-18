@@ -169,9 +169,6 @@ body {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#2e2be9), to(#977efc));
     background-image: linear-gradient(to top, #2e2be9, #977efc);
   }
-  .attribution {
-    margin-bottom: 5em;
-  }
 }
 
 @media (min-width: 768px) {
@@ -215,7 +212,7 @@ body {
             align-items: start;
   }
   .component .component-stats-performance__header {
-    margin-top: 1.5em;
+    margin-top: 1.75em;
   }
   .component .component-stats-performance .performance-stats {
     width: 100%;
@@ -225,10 +222,7 @@ body {
   }
   .component .component-stats-performance__cta {
     padding: 1.5em 2em;
-    margin-bottom: 2em;
-  }
-  .component .component-stats-performance .attribution {
-    margin-bottom: 0;
+    margin-bottom: 3.25em;
   }
 }
 /*# sourceMappingURL=style.css.map */
