@@ -88,41 +88,38 @@ body {
         margin-top: 0.5em;
       }
       .performance-stats {
-        &__reaction,
-        &__memory,
-        &__verbal,
-        &__visual {
+        .memory-section, .reaction-section, .verbal-section, .visual-section{
           display: flex;
-          align-items: start;
-          flex-direction: row;
-          position: relative;
-          padding: 1.75em 0;
-          margin-left: 1em;
-          font-size: 1.4rem;
-          font-weight: $bold;
-          gap: 0 .75em;
-        }
-        &__reaction{
-          color: $lightRed;
-        }
-        &__memory{
-          color: $orangeYellow;
-        }
-        &__verbal{
-          color: $greenTeal;
-        }
-        &__visual{
-          color: $cobaltBlue;
-        }
-        &--stat-memory, &--stat-reaction, &--stat-verbal, &--stat-visual{
-          position: absolute;
-          right: 0;
-          top: -50;
-          margin-right: 2em;
-          color: $darkGrayBlue;
-        }
-        &--gray-color{
-          color: $lightLavender;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 2em;
+          &__memory, &__reaction,&__verbal, &__visual{
+            display: flex;
+            align-items: center;
+            color: $orangeYellow;
+            font-size: 1.4rem;
+            padding: 1.75em 0;
+            margin-top: .75em;
+          }
+          &__reaction{
+            color: $lightRed;
+          }
+          &__verbal{
+            color: $greenTeal;
+          }
+          &__visual{
+            color: $cobaltBlue;
+          }
+          &__icon{
+            margin-right: .9em;
+          }
+          &__reaction-count, &__memory-count, &__verbal-count, &__visual-count{
+            font-size: 1.4rem;
+            &--maxscore{
+              color: $darkGrayBlue;
+            }
+          }
+         
         }
       }
       &__cta {
@@ -175,13 +172,7 @@ body {
       }
       .performance-stats {
       width: 100%;
-      justify-content: start;       
-      &__reaction,
-      &__memory,
-      &__verbal,
-      &__visual {
-       padding-bottom: 2em;
-      }
+      justify-content: start;     
     }
     &__cta{
       padding: 1.5em 2em;

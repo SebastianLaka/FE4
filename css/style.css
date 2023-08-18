@@ -109,45 +109,47 @@ body {
     font-weight: 700;
     margin-top: 0.5em;
   }
-  .component .component-stats-performance .performance-stats__reaction, .component .component-stats-performance .performance-stats__memory, .component .component-stats-performance .performance-stats__verbal, .component .component-stats-performance .performance-stats__visual {
+  .component .component-stats-performance .performance-stats .memory-section, .component .component-stats-performance .performance-stats .reaction-section, .component .component-stats-performance .performance-stats .verbal-section, .component .component-stats-performance .performance-stats .visual-section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    position: relative;
-    padding: 1.75em 0;
-    margin-left: 1em;
-    font-size: 1.4rem;
-    font-weight: 700;
-    gap: 0 .75em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 2em;
   }
-  .component .component-stats-performance .performance-stats__reaction {
+  .component .component-stats-performance .performance-stats .memory-section__memory, .component .component-stats-performance .performance-stats .memory-section__reaction, .component .component-stats-performance .performance-stats .memory-section__verbal, .component .component-stats-performance .performance-stats .memory-section__visual, .component .component-stats-performance .performance-stats .reaction-section__memory, .component .component-stats-performance .performance-stats .reaction-section__reaction, .component .component-stats-performance .performance-stats .reaction-section__verbal, .component .component-stats-performance .performance-stats .reaction-section__visual, .component .component-stats-performance .performance-stats .verbal-section__memory, .component .component-stats-performance .performance-stats .verbal-section__reaction, .component .component-stats-performance .performance-stats .verbal-section__verbal, .component .component-stats-performance .performance-stats .verbal-section__visual, .component .component-stats-performance .performance-stats .visual-section__memory, .component .component-stats-performance .performance-stats .visual-section__reaction, .component .component-stats-performance .performance-stats .visual-section__verbal, .component .component-stats-performance .performance-stats .visual-section__visual {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #ffb01f;
+    font-size: 1.4rem;
+    padding: 1.75em 0;
+    margin-top: .75em;
+  }
+  .component .component-stats-performance .performance-stats .memory-section__reaction, .component .component-stats-performance .performance-stats .reaction-section__reaction, .component .component-stats-performance .performance-stats .verbal-section__reaction, .component .component-stats-performance .performance-stats .visual-section__reaction {
     color: #ff5757;
   }
-  .component .component-stats-performance .performance-stats__memory {
-    color: #ffb01f;
-  }
-  .component .component-stats-performance .performance-stats__verbal {
+  .component .component-stats-performance .performance-stats .memory-section__verbal, .component .component-stats-performance .performance-stats .reaction-section__verbal, .component .component-stats-performance .performance-stats .verbal-section__verbal, .component .component-stats-performance .performance-stats .visual-section__verbal {
     color: #00bd91;
   }
-  .component .component-stats-performance .performance-stats__visual {
+  .component .component-stats-performance .performance-stats .memory-section__visual, .component .component-stats-performance .performance-stats .reaction-section__visual, .component .component-stats-performance .performance-stats .verbal-section__visual, .component .component-stats-performance .performance-stats .visual-section__visual {
     color: #1125d4;
   }
-  .component .component-stats-performance .performance-stats--stat-memory, .component .component-stats-performance .performance-stats--stat-reaction, .component .component-stats-performance .performance-stats--stat-verbal, .component .component-stats-performance .performance-stats--stat-visual {
-    position: absolute;
-    right: 0;
-    top: -50;
-    margin-right: 2em;
-    color: #303b5a;
+  .component .component-stats-performance .performance-stats .memory-section__icon, .component .component-stats-performance .performance-stats .reaction-section__icon, .component .component-stats-performance .performance-stats .verbal-section__icon, .component .component-stats-performance .performance-stats .visual-section__icon {
+    margin-right: .9em;
   }
-  .component .component-stats-performance .performance-stats--gray-color {
-    color: #c8c7ff;
+  .component .component-stats-performance .performance-stats .memory-section__reaction-count, .component .component-stats-performance .performance-stats .memory-section__memory-count, .component .component-stats-performance .performance-stats .memory-section__verbal-count, .component .component-stats-performance .performance-stats .memory-section__visual-count, .component .component-stats-performance .performance-stats .reaction-section__reaction-count, .component .component-stats-performance .performance-stats .reaction-section__memory-count, .component .component-stats-performance .performance-stats .reaction-section__verbal-count, .component .component-stats-performance .performance-stats .reaction-section__visual-count, .component .component-stats-performance .performance-stats .verbal-section__reaction-count, .component .component-stats-performance .performance-stats .verbal-section__memory-count, .component .component-stats-performance .performance-stats .verbal-section__verbal-count, .component .component-stats-performance .performance-stats .verbal-section__visual-count, .component .component-stats-performance .performance-stats .visual-section__reaction-count, .component .component-stats-performance .performance-stats .visual-section__memory-count, .component .component-stats-performance .performance-stats .visual-section__verbal-count, .component .component-stats-performance .performance-stats .visual-section__visual-count {
+    font-size: 1.4rem;
+  }
+  .component .component-stats-performance .performance-stats .memory-section__reaction-count--maxscore, .component .component-stats-performance .performance-stats .memory-section__memory-count--maxscore, .component .component-stats-performance .performance-stats .memory-section__verbal-count--maxscore, .component .component-stats-performance .performance-stats .memory-section__visual-count--maxscore, .component .component-stats-performance .performance-stats .reaction-section__reaction-count--maxscore, .component .component-stats-performance .performance-stats .reaction-section__memory-count--maxscore, .component .component-stats-performance .performance-stats .reaction-section__verbal-count--maxscore, .component .component-stats-performance .performance-stats .reaction-section__visual-count--maxscore, .component .component-stats-performance .performance-stats .verbal-section__reaction-count--maxscore, .component .component-stats-performance .performance-stats .verbal-section__memory-count--maxscore, .component .component-stats-performance .performance-stats .verbal-section__verbal-count--maxscore, .component .component-stats-performance .performance-stats .verbal-section__visual-count--maxscore, .component .component-stats-performance .performance-stats .visual-section__reaction-count--maxscore, .component .component-stats-performance .performance-stats .visual-section__memory-count--maxscore, .component .component-stats-performance .performance-stats .visual-section__verbal-count--maxscore, .component .component-stats-performance .performance-stats .visual-section__visual-count--maxscore {
+    color: #303b5a;
   }
   .component .component-stats-performance__cta {
     padding: 1.75em 0;
@@ -217,9 +219,6 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
-  }
-  .component .component-stats-performance .performance-stats__reaction, .component .component-stats-performance .performance-stats__memory, .component .component-stats-performance .performance-stats__verbal, .component .component-stats-performance .performance-stats__visual {
-    padding-bottom: 2em;
   }
   .component .component-stats-performance__cta {
     padding: 1.5em 2em;
