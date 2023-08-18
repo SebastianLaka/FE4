@@ -169,6 +169,9 @@ body {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#2e2be9), to(#977efc));
     background-image: linear-gradient(to top, #2e2be9, #977efc);
   }
+  .attribution {
+    margin-bottom: 5em;
+  }
 }
 
 @media (min-width: 768px) {
