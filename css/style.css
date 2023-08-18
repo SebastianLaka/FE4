@@ -225,7 +225,10 @@ body {
   }
   .component .component-stats-performance__cta {
     padding: 1.5em 2em;
-    margin-bottom: 2.5em;
+    margin-bottom: 2em;
+  }
+  .component .component-stats-performance .attribution {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
